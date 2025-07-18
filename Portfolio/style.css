@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    background-color: black;
+    color: gold;
+    text-align: center;
+
+}
+
+.name{
+    font-size: 35px;
+}
+
+.about{
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    text-align: left;
+    background-color: black;
+    color: gold;
+    gap: 40px;
+    padding: 40px 0;
+}
+.img img {
+    width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid gold;
+}
+.bio{
+    font-size: 25px;
+    max-width: 700px;
+}
+.skills{
+    height: 220px;
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+    padding: 30px;
+}
+
+.skill1, .skill2, .skill3 {
+    color: gold;
+    height: 200px;
+    width: 125px;
+    border: 2px solid gold;
+    padding: 10px;
+    border-radius: 12px;
+     
+
+}
+h2{
+    background-color: black;
+    color: gold;
+    text-align: center;
+    text-decoration: underline;
+   
+}
+.projects {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    background-color: black;
+    padding: 40px 0;
+}
+.project-card {
+    background: #181818;
+    border: 2px solid gold;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    overflow: hidden;
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+.project-card img {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid gold;
+}
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+.project-info h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: gold;
+}
+.project-info p {
+    font-size: 16px;
+    color: gold;
+}
+.download-btn {
+    display: inline-block;
+    background: gold;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    margin-top: 20px;
+}
+.download-btn:hover {
+    background: #ffd700cc;
+    color: #181818;
+    transform: translateY(-2px) scale(1.04);
+}
+.contact {
+    background: black;
+    color: gold;
+    text-align: center;
+    padding: 40px 0 30px 0;
+    margin-top: 0;
+}
+.contact-info {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.contact-info p {
+    margin: 8px 0;
+}
+.footer {
+    background: black;
+    color: gold;
+    text-align: center;
+    padding: 24px 0 12px 0;
+    margin-top: 0;
+}
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.footer-links {
+    margin-top: 10px;
+}
+.footer-links a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+@media (max-width: 900px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+        padding: 24px 0;
+    }
+    .img img {
+        width: 160px;
+        height: 160px;
+    }
+    .bio {
+        font-size: 18px;
+        max-width: 90vw;
+    }
+    .skills {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        height: auto;
+        padding: 20px 0;
+    }
+    .skill1, .skill2, .skill3 {
+        width: 90vw;
+        max-width: 350px;
+        height: auto;
+        font-size: 16px;
+    }
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    .project-card {
+        width: 95vw;
+        max-width: 350px;
+    }
+}
+@media (max-width: 600px) {
+    .about {
+        gap: 16px;
+        padding: 16px 0;
+    }
+    .img img {
+        width: 100px;
+        height: 100px;
+    }
+    .bio {
+        font-size: 10px;
+        max-width: 60%;
+        padding: 0 10px;
+    }
+    .name {
+        font-size: 22px;
+    }
+    .tag {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+    .skills {
+        gap: 12px;
+        padding: 8px 0;
+    }
+    .skill1, .skill2, .skill3 {
+        font-size: 13px;
+        padding: 6px;
+    }
+    .projects {
+        gap: 12px;
+        padding: 8px 0;
+    }
+    .project-card {
+        font-size: 13px;
+        padding: 0;
+    }
+    .project-card img {
+        height: 90px;
+    }
+    .download-btn {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    .contact-info {
+        font-size: 13px;
+    }
+    .footer-content {
+        font-size: 12px;
+    }
+    .footer-links a {
+        font-size: 13px;
+        margin: 0 4px;
+    }
+}
